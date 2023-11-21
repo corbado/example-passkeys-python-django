@@ -54,7 +54,7 @@ ROOT_URLCONF = 'passkeys_demo.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ['passkeys_demo/templates/'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
