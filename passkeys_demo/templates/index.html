@@ -1,11 +1,13 @@
+<!DOCTYPE html>
 <html>
 <head>
-    <title>Passkeys Demo</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <title>Corbado Login</title>
 </head>
 <body>
-    <h1>Passkeys Demo</h1>
-    <p>Passkeys is a simple password manager that uses a master password to generate unique passwords for each site you visit.</p>
-    <p>It's a simple concept, but it's very powerful.  It allows you to use a different password for every site you visit, without having to remember them all.</p>
+<script src="https://{{PROJECT_ID}}.frontendapi.corbado.io/auth.js"></script>
+<corbado-auth project-id="{{PROJECT_ID}}" conditional="yes">
+    <input name="username" id="corbado-username"
+           required autocomplete="webauthn"/>
+</corbado-auth>
 </body>
 </html>
