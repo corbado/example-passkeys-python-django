@@ -2,14 +2,14 @@
 
 ## 1. File structure
 ```
-├── .env
+├── .env                    # Contains all environment variables
 ├── passkeys_demo
-|   ├── settings.py
-|   ├── urls.py
-|   ├── views.py
+|   ├── settings.py         # Global settings
+|   ├── urls.py             # Route config
+|   ├── views.py            # Controller for our pages
 |   ├── templates
-|   |   ├── index.html               # All routes belonging to certain views
-|   |   └── profile.html     # All routes belonging to the Corbado webhook
+|   |   ├── index.html      # Login page
+|   |   └── profile.html    # Profile page
 ```
 
 ## 2. Setup
