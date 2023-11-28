@@ -1,15 +1,15 @@
-# Passkey-First Authentication with Flask and Corbado
+# Passkey-First Authentication with Django and Corbado
 
 ## Project Overview
 
 This project implements a web application with a login system using Corbado' passkey-first authentication service
-integrated with a Flask backend. The application consists of two main pages: a login page and a home page. Once users
+integrated with a Django backend. The application consists of two main pages: a login page and a home page. Once users
 log in successfully via the Corbado service on the login page, they are redirected to the home page where they can log
 out and view protected content.
 
 ## Tools and Technologies Used
 
-- **Flask**: A lightweight WSGI web application framework in Python, used to build the backend of the application.
+- **Django**: A lightweight WSGI web application framework in Python, used to build the backend of the application.
 - **Corbado**: An authentication service used to handle passkey-first user authentication.
 - **Python-dotenv**: A Python package to read key-value pairs from a `.env` file and set them as environment variables.
 - **HTML & CSS**: Used to structure and style the frontend of the application.
@@ -26,7 +26,7 @@ out and view protected content.
 Clone this repository to your local machine by running:
 
 ```sh
-git clone https://github.com/corbado/example-passkeys-python-flask
+git clone https://github.com/corbado/example-passkeys-django
 
 ```
 
