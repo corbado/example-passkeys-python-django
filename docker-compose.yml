@@ -6,7 +6,7 @@ services:
       context: .
       dockerfile: Dockerfile
     env_file:
-      - ./passkeys_demo/.env
+      - ./.env
     ports:
       - 8000:8000
     restart: always
