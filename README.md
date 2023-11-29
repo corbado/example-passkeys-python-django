@@ -1,6 +1,26 @@
 # Passkey-First Authentication with Django and Corbado
 
-## 1. File structure
+## Project Overview
+
+This project implements a web application with a login system using Corbado' passkey-first authentication service
+integrated with a Django backend. The application consists of two main pages: a login page and a home page. Once users
+log in successfully via the Corbado service on the login page, they are redirected to the home page where they can log
+out and view protected content.
+
+## Tools and Technologies Used
+
+- **Django**: A full-featured Python web framework, used to build the backend of the application.
+- **Corbado**: An authentication service used to handle passkey-first user authentication.
+- **HTML & CSS**: Used to structure and style the frontend of the application.
+
+## Features
+
+- **Passkey-first Authentication**: Utilizes Corbado's authentication service for secure user login.
+- **Session management**: Uses Corbado's session management to display content based on the user's authentication status.
+
+## How to Use
+
+### 1. File structure
 ```
 ├── .env                    # Contains all environment variables
 ├── passkeys_demo
@@ -12,8 +32,8 @@
 |   |   └── profile.html    # Profile page
 ```
 
-## 2. Setup
-### Step 2.1: Clone the Repository
+### 2. Setup
+#### Step 2.1: Clone the Repository
 
 Clone this repository to your local machine by running:
 
@@ -22,7 +42,7 @@ git clone https://github.com/corbado/example-passkeys-django
 
 ```
 
-### Step 2.2: Create .env File
+#### Step 2.2: Create .env File
 
 To configure the credentials, you will need to create a .env file with your project ID and API secret from Corbado:
 To get your project ID and API secret visit your [Corbado developer panel](https://app.corbado.com/).
@@ -36,7 +56,7 @@ API_SECRET=<your-api-secret>
 
 ```
 
-### Step 2.3: Run the Project
+#### Step 2.3: Run the Project
 
 Use the following command to run the project in a docker container:
 
@@ -44,7 +64,7 @@ Use the following command to run the project in a docker container:
 docker compose up
 ```
 
-## 3. Usage
+### 3. Usage
 
 After step 2.2. your local server should be fully working.
 
