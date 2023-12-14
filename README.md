@@ -56,7 +56,13 @@ API_SECRET=<your-api-secret>
 
 ```
 
-#### Step 2.3: Run the Project
+#### Step 2.3: Configure Corbado project
+
+In the Corbado developer Panel, visit the [URLs settings](https://app.corbado.com/app/settings/general/urls) and enter the values shown in the image below:
+<img width="1248" alt="image" src="https://github.com/corbado/example-passkeys-python-django/assets/23581140/33844126-9f61-4ad5-91b8-581a6d72dc19">
+
+
+#### Step 2.4: Run the Project
 
 Use the following command to run the project in a docker container:
 
