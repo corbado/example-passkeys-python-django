@@ -7,7 +7,7 @@ integrated with a Django backend. The application consists of two main pages: a 
 log in successfully via the Corbado service on the login page, they are redirected to the home page where they can log
 out and view protected content.
 
-Please see the [full blog post](https://www.corbado.com/blog/django-passkeys) to understand all the required steps to integrate passkeys into React apps.
+Please see the [full blog post](https://www.corbado.com/blog/django-passkeys) to understand all the required steps to integrate passkeys into Django apps.
 
 ## Tools and Technologies Used
 
