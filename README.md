@@ -1,4 +1,4 @@
-# Passkey-First Authentication with Django and Corbado
+# Django Passkey Example App
 
 ## Project Overview
 
