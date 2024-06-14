@@ -1,7 +1,6 @@
 from corbado_python_sdk import Config, CorbadoSDK, SessionInterface, UserEntity
 from django.http import HttpResponse
 from django.shortcuts import redirect, render
-from werkzeug.exceptions import Unauthorized
 
 from passkeys_demo.settings import API_SECRET, PROJECT_ID
 
@@ -44,8 +43,8 @@ def profile(
 
             return render(request, "profile.html", context)
         else:
-            raise Unauthorized()
-
+            return HttpResponse("You are not authenticated or have not yet confirmed your email.", status=401)
+        
     except Exception as e:
         print(e)
         return redirect("/")
