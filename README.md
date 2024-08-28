@@ -41,13 +41,12 @@ Clone this repository to your local machine by running:
 
 ```sh
 git clone https://github.com/corbado/example-passkeys-django
-
 ```
 
 #### Step 2.2: Create .env File
 
-To configure the credentials, you will need to create a .env file with your project ID and API secret from Corbado:
-To get your project ID and API secret visit your [Corbado developer panel](https://app.corbado.com/).
+To configure the credentials, you will need to create a `.env` file with your `Project ID` and `API secret` from Corbado:
+To get your `Project ID` and `API secret` visit your [Corbado developer panel](https://app.corbado.com/?technology=passkeys&framework=Django#signup-init).
 
 Please refer to the [Corbado docs](https://docs.corbado.com/overview/welcome) for more details on obtaining the
 necessary credentials and integrating Corbado authentication in your application.
@@ -55,13 +54,13 @@ necessary credentials and integrating Corbado authentication in your application
 ```sh
 PROJECT_ID=<your-project-id>
 API_SECRET=<your-api-secret>
-
 ```
 
 #### Step 2.3: Configure Corbado project
 
 In the Corbado developer Panel, visit the [URLs settings](https://app.corbado.com/app/settings/general/urls) and enter the values shown in the image below:
-<img width="1248" alt="image" src="https://github.com/corbado/example-passkeys-python-django/assets/23581140/33844126-9f61-4ad5-91b8-581a6d72dc19">
+
+![Corbado developer panel URL](https://github.com/user-attachments/assets/533857f6-cd2f-42fe-b72b-c4b0277f8300)
 
 
 #### Step 2.4: Run the Project
@@ -76,14 +75,15 @@ docker compose up
 
 After step 2.4. your local server should be fully working.
 
-If you now visit [http://localhost:8000](http://localhost:8000), you should be able to sign up using the Corbado web component.
+If you now visit [http://localhost:8000](http://localhost:8000), you should be able to sign up using the Corbado UI component.
 
-<img width="1125" alt="webcomponent" src="https://github.com/corbado/example-passkeys-django/assets/23581140/1390088d-26bd-4a69-b8d8-d87334a5c9a6">
+![django passkeys ui component](https://github.com/user-attachments/assets/8d894ba6-17b7-4769-b5ff-3dd9ec5b648a)
 
 
 When authenticated you will be forwarded to the `/profile` page.
 
-<img width="1125" alt="profile_page" src="https://github.com/corbado/example-passkeys-django/assets/23581140/340a7ec2-2e3a-44bb-b781-bbe42f215f0c">
+<img width="1435" alt="Django Passkey List" src="https://github.com/user-attachments/assets/3d67f3db-205c-455e-99f6-31ddb63171a3">
+
 
 
 
