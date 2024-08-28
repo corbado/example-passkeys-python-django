@@ -82,7 +82,8 @@ If you now visit [http://localhost:8000](http://localhost:8000), you should be a
 
 When authenticated you will be forwarded to the `/profile` page.
 
-<img width="1125" alt="profile_page" src="https://github.com/corbado/example-passkeys-django/assets/23581140/340a7ec2-2e3a-44bb-b781-bbe42f215f0c">
+<img width="1435" alt="Django Passkey List" src="https://github.com/user-attachments/assets/3d67f3db-205c-455e-99f6-31ddb63171a3">
+
 
 
 
