@@ -1,12 +1,10 @@
 from typing import List
-from corbado_python_sdk import Config, CorbadoSDK, SessionInterface, UserEntity
+from corbado_python_sdk import Config, CorbadoSDK, SessionService, UserEntity
 from corbado_python_sdk.entities.session_validation_result import (
     SessionValidationResult,
 )
 from corbado_python_sdk.generated.models.identifier import Identifier
-from corbado_python_sdk.services.interface.identifier_interface import (
-    IdentifierInterface,
-)
+from corbado_python_sdk.services import IdentifierService
 from django.http import HttpResponse
 from django.shortcuts import redirect, render
 
@@ -20,8 +18,8 @@ config: Config = Config(
 
 # Initialize SDK
 sdk: CorbadoSDK = CorbadoSDK(config=config)
-sessions: SessionInterface = sdk.sessions
-identifiers: IdentifierInterface = sdk.identifiers
+sessions: SessionService = sdk.sessions
+identifiers: IdentifierService = sdk.identifiers
 
 
 def index(request) -> HttpResponse:
@@ -50,7 +48,9 @@ def profile(
                     or ""  # at this point user_id should be non empty string since user was authenticated
                 )
             )
-            user: UserEntity = sessions.get_current_user(short_session=token)
+            user: SessionValidationResult = sessions.get_current_user(
+                short_session=token
+            )
 
             context = {
                 "request": request,
