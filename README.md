@@ -75,7 +75,7 @@ docker compose up
 
 After step 2.4. your local server should be fully working.
 
-If you now visit [http://localhost:8000](http://localhost:8000), you should be able to sign up using the Corbado UI component.
+If you now visit [http://localhost:3000](http://localhost:3000), you should be able to sign up using the Corbado UI component.
 
 ![django passkeys ui component](https://github.com/user-attachments/assets/8d894ba6-17b7-4769-b5ff-3dd9ec5b648a)
 
