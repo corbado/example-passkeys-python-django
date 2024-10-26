@@ -21,7 +21,6 @@ sdk: CorbadoSDK = CorbadoSDK(config=config)
 sessions: SessionService = sdk.sessions
 identifiers: IdentifierService = sdk.identifiers
 
-
 def index(request) -> HttpResponse:
     context = {
         "PROJECT_ID": PROJECT_ID,
@@ -32,13 +31,13 @@ def index(request) -> HttpResponse:
 def profile(
     request,
 ) -> HttpResponse:
-    token = request.COOKIES.get(config.short_session_cookie_name)
+    sessionToken = request.COOKIES.get("cbo_session_token")
 
     try:
-        if not token:
+        if not sessionToken:
             raise ValueError("No token found")
         validation_result: SessionValidationResult = (
-            sessions.get_and_validate_short_session_value(short_session=token)
+            sessions.get_and_validate_short_session_value(short_session=sessionToken)
         )
         if validation_result.authenticated:
 
@@ -49,7 +48,7 @@ def profile(
                 )
             )
             user: SessionValidationResult = sessions.get_current_user(
-                short_session=token
+                short_session=sessionToken
             )
 
             context = {

@@ -1,6 +1,9 @@
 # Base image
 FROM python:latest
 
+ENV PYTHONUNBUFFERED 1  # ensures Python outputs directly to the terminal
+ENV DJANGO_ENV development 
+
 # Set work directory
 WORKDIR /app
 
